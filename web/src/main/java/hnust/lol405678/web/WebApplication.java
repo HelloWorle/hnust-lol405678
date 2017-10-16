@@ -1,4 +1,4 @@
-package hnust.lol405678;
+package hnust.lol405678.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
