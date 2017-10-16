@@ -1,0 +1,10 @@
+.idea
+target/
+s*/*/target/
+
+*.class
+*.iml
+application.yml
+
+
+
