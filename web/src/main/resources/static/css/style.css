@@ -1,0 +1,15 @@
+.header {
+    margin-bottom: 10px;
+}
+
+.float_clear {
+    overflow: hidden;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
