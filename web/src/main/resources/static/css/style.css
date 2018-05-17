@@ -1,15 +1,405 @@
-.header {
-    margin-bottom: 10px;
-}
-
+/******************** style.css ********************/
 .float_clear {
-    overflow: hidden;
+	clear: both;
 }
 
 .float_left {
-    float: left;
+	float: left;
 }
 
 .float_right {
-    float: right;
+	float: right;
 }
+
+a {
+	cursor: pointer;
+}
+
+/*.content .banner .search .search-txt .search_tips {
+	display: none;
+}
+
+.content .banner .search .search-txt .search_tips .list-group .tips_link {
+	border-radius: 0px;
+	border: none;
+}
+
+.content .banner .search .search-txt .search_tips .list-group .tips_link:hover {
+	background-color: #dddddd;
+}*/
+
+.cancel_icon {
+	cursor: pointer;
+}
+
+header {
+	position: fixed;
+	color: white;
+}
+
+.content {
+	margin-top: 60px;
+}
+
+/**************************************************超小屏幕 手机 ****************************************************************/
+
+/******************** header.css ********************/
+.container-fluid {
+	/*min-width: 440px;*/
+}
+header {
+	background-color: rgb(0,199,138);
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 15px;
+	right: 15px;
+	left: 15px;
+	z-index: 3;
+}
+
+header .entry a {
+	color: white;
+}
+
+/******************** content.css ********************/
+.content .banner {
+	box-sizing: border-box;
+	background: url(../img/1.jpg) no-repeat;
+	height: 600px;
+	position: relative;
+	background-size: cover;
+  	padding-top: 200px;
+}
+
+.content .banner .search .search-title {
+	font-size: 4rem;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+
+.content .banner .search .search-txt #search_text {
+	z-index: 1;
+	/*position:relative;*/
+	padding-right: 55px;
+	background-color: rgb(0,199,138);
+	border: none;
+}
+
+.content .banner .search .search-txt #search_btn {
+	margin-left: 240px;
+	margin-top: -78px;
+	border-radius: 0px;
+	z-index: 2;
+	position:relative;
+	width: 50px;
+	background-color: rgb(0,199,138);
+	border: none;
+	background: #00C78A url(../img/search.png) center no-repeat;
+}
+
+.content .display_area {
+	box-sizing: border-box;
+	width: 280px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 0px 10px;
+}
+
+.content .display_model {
+	width: 250px;
+	height: 250px;
+}
+
+.content .display_area .bug_txt {
+	margin: 10px 5px;
+}
+
+.mask_model {
+	font-size: 1rem;
+}
+
+/* 登录 */
+.content .mask_model .login {
+	/*width: 300px;
+	height: 300px;*/
+	background-color: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.content .mask_model .login .login_title {
+	text-indent: 1.5rem;
+	font-size: 1.5rem;
+	margin-top: 10px;
+}
+
+#login_form {
+	margin-top: 20px;
+}
+#login_form .submit_btn {
+	width: 100%;
+}
+#login_form .checkbox {
+	color: rgb(102,102,102);
+}
+
+#login_form #userName,#password {
+	padding-left: 25px;
+}
+
+/* 注册  */
+.content .mask_model .register {
+	/*width: 300px;
+	height: 300px;*/
+	background-color: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.content .mask_model .register .register_title {
+	text-indent: 1.5rem;
+	font-size: 1.5rem;
+	margin-top: 10px;
+}
+
+#register_form .submit_btn {
+	width: 100%;
+}
+
+#register_form #verifyCode {
+	width: 180px;
+}
+
+#register_form #verifyCode+img {
+	width: 90px;
+	padding: 0px;
+	margin-left: 10px;
+	border: none;
+}
+
+/******************** footer.css ********************/
+footer {
+	margin-top: 100px;
+	text-align: center;
+	height: 100px;
+	background-color: rgb(85,85,85);
+	line-height: 100px;
+	color: white;
+	/*min-width: 400px;*/
+}
+
+footer span {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 22px;
+}
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 超小屏幕 手机 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************中屏 ***********************************************************/
+
+@media (min-width: 768px) {
+	/******************** header.css ********************/
+	header {
+		background-color: rgb(0,199,138);
+		height: 60px;
+		line-height: 60px;
+		padding: 0px 15px;
+		right: 15px;
+		left: 15px;
+		z-index: 3;
+	}
+	
+	
+	/******************** content.css ********************/
+	.content .banner {
+		box-sizing: border-box;
+		background: url(../img/1.jpg) no-repeat;
+		height: 600px;
+		position: relative;
+		background-size: cover;
+	  	/*background-position: center center;*/
+	  	min-width: 350px;
+	  	padding-top: 200px;
+	}
+	
+	.content .banner .search .search-title {
+		font-size: 8rem;
+		color: #FFFFFF;
+		margin-bottom: 30px;
+	}
+	
+	content .banner .search .search-txt {}
+	
+	.content .banner .search .search-txt #search_text {
+		z-index: 1;
+		position:relative;
+		padding-right: 55px;
+		background-color: rgb(0,199,138);
+		border: none;
+		width: 385px;
+	}
+	
+	.content .banner .search .search-txt #search_btn {
+		margin-left: -58px;
+		margin-top: 0px;
+		border-radius: 0px;
+		z-index: 2;
+		position:relative;
+		width: 50px;
+		background-color: rgb(0,199,138);
+		border: none;
+		background: #00C78A url(../img/search.png) center no-repeat;
+	}
+	
+	.content .display_area {
+		box-sizing: border-box;
+		width: 736px;
+		margin: 0px auto;
+		overflow: hidden;
+		padding: 0px 38px;
+	}
+	
+	.content .display_model {
+		width: 300px;
+		height: 300px;
+	}
+
+	
+	.content .display_area .bug_txt {
+		margin: 10px 15px;
+	}
+	
+	/* 登录 */
+	.content .mask_model .login {
+		/*width: 400px;
+		height: 350px;*/
+		background-color: white;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding: 10px 20px;
+	}
+	
+	.content .mask_model .login .login_title {
+		text-indent: 1.5rem;
+		font-size: 1.8rem;
+		margin-top: 30px;
+	}
+	
+	#login_form {
+		margin-top: 20px;
+	}
+	#login_form .form-group {
+		margin: 20px 0px;
+	}
+	#login_form .submit_btn {
+		width: 100%;
+	}
+	#login_form .checkbox {
+		color: rgb(102,102,102);
+	}
+	
+	#login_form #userName,#password {
+		padding-left: 25px;
+	}
+	
+	/* 注册 */
+	.content .mask_model .register {
+		/*width: 400px;
+		height: 350px;*/
+		background-color: white;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding: 10px 20px;
+	}
+	
+	.content .mask_model .register .register_title {
+		text-indent: 1.5rem;
+		font-size: 1.8rem;
+		margin-top: 30px;
+	}
+	
+	#register_form .submit_btn {
+		width: 100%;
+	}
+	
+	#register_form #verifyCode {
+		width: 240px;
+	}
+	
+	#register_form #verifyCode+img {
+		width: 110px;
+		padding: 0px;
+		margin-left: 10px;
+		border: none;
+	}
+	
+	/******************** footer.css ********************/
+	footer {
+		margin-top: 100px;
+		text-align: center;
+		height: 100px;
+		background-color: rgb(85,85,85);
+		line-height: 100px;
+		color: white;
+	}
+	
+}
+
+/*******************************************************中屏 ***********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************大屏幕***********************************************************/
+
+@media (min-width: 1200px) {
+	.content .display_area {
+		box-sizing: border-box;
+		width: 1168px;
+		margin: 0px auto;
+		overflow: hidden;
+		padding: 0px 89px;
+	}
+	
+	.content .display_area .bug_txt {
+		margin: 10px 15px;
+	}
+}
+	
+/*******************************************************大屏幕***********************************************************/
