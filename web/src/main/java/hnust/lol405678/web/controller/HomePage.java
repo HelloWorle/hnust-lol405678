@@ -1,6 +1,8 @@
 package hnust.lol405678.web.controller;
 
+import hnust.lol405678.web.services.users.UsersService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +19,10 @@ import java.util.Map;
 @Controller
 @RequestMapping
 public class HomePage {
+
+    @Autowired
+    private UsersService usersService;
+
     /**
      * 跳转主页
      * */
@@ -85,6 +91,14 @@ public class HomePage {
 
             if (StringUtils.isBlank(verifyCode)) {
                 map.put("msg", "验证码为空");
+                map.put("code", "300");
+                return map;
+            }
+
+            int result = usersService.register(userNameNew, passwordNew);
+
+            if (result != 1) {
+                map.put("msg", "注册失败");
                 map.put("code", "300");
                 return map;
             }
